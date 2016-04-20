@@ -1,0 +1,27 @@
+{
+  "name": "apidoc-plugin-test",
+  "version": "1.0.0",
+  "description": "Only a test and example plugin. It demonstrates the usage of the apidoc hook system.",
+  "author": "Peter Rottmann <rottmann@inveris.de>",
+  "license": {
+    "type": "MIT",
+    "url": "https://github.com/apidoc/apidoc/blob/master/LICENSE"
+  },
+  "main": "index.js",
+  "homepage": "http://apidocjs.com",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/apidoc/apidoc-plugin-test.git"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "apidoc",
+    "plugin",
+    "apidoc-plugin"
+  ],
+  "engines": {
+    "node": ">= 0.10.0"
+  }
+}
