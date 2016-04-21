@@ -6,7 +6,7 @@ apidoc search in global node modules dir and local `node_modules` for modules th
 
 With a plugin you can add features like new parsers or filters and workers.
 
-A plugin can use apidoc-core [hooks](https://github.com/apidoc/apidoc-core/hooks.md).
+A plugin can use apidoc-core [hooks](https://github.com/apidoc/apidoc-core/blob/master/hooks.md).
 Hooks can be used to extend or transform data.
 
 If you need a hook in apidoc-core please add your hook and provide a [pull request](https://github.com/apidoc/apidoc-core/).
