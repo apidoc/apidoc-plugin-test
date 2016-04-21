@@ -14,7 +14,10 @@
     "url": "https://github.com/apidoc/apidoc-plugin-test.git"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "npm run jshint && mocha test/",
+    "jshint": "jshint",
+    "build-example": "cd .. && apidoc-plugin-test/node_modules/apidoc/bin/apidoc -i apidoc-plugin-test/test/src/ -o apidoc-plugin-test/tmp/ --debug --verbose && cd apidoc-plugin-test",
+    "check-updates": "npm-check-updates"
   },
   "keywords": [
     "apidoc",
@@ -23,5 +26,33 @@
   ],
   "engines": {
     "node": ">= 0.10.0"
+  },
+  "devDependencies": {
+    "apidoc": "*",
+    "apidoc-core": "~0.7.0",
+    "fs-extra": "^0.28.0",
+    "jshint": "^2.9.2",
+    "mocha": "^2.4.5",
+    "npm-check-updates": "^2.6.3",
+    "should": "^8.3.1"
+  },
+  "jshintConfig": {
+    "camelcase": true,
+    "curly": false,
+    "eqeqeq": true,
+    "forin": true,
+    "latedef": false,
+    "newcap": true,
+    "undef": true,
+    "unused": true,
+    "trailing": true,
+    "node": true,
+    "browser": true,
+    "predef": [
+      "it",
+      "describe",
+      "before",
+      "after"
+    ]
   }
 }
